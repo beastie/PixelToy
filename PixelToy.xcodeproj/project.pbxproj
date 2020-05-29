@@ -1,0 +1,516 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		357F8633177463CC00E68FAD /* PixelToy.rsrc in Resources */ = {isa = PBXBuildFile; fileRef = 357F863017745D7E00E68FAD /* PixelToy.rsrc */; };
+		357F863E17748CF100E68FAD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 357F863C17748CF100E68FAD /* Localizable.strings */; };
+		35A5BF3B1A7D252A00C022C5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35A5BF3A1A7D252A00C022C5 /* Images.xcassets */; };
+		35C65357177C5AA100BA18DE /* Default.cpal in Resources */ = {isa = PBXBuildFile; fileRef = 35C65356177C5AA100BA18DE /* Default.cpal */; };
+		35DBEC481779872C0095BF9F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35DBEC471779872C0095BF9F /* SystemConfiguration.framework */; };
+		35DBEC5317798D520095BF9F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35DBEC5217798D520095BF9F /* Cocoa.framework */; };
+		8D0C4E8D0486CD37000505A6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0867D6AAFE840B52C02AAC07 /* InfoPlist.strings */; };
+		8D0C4E900486CD37000505A6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20286C2BFDCF999611CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D0C4E920486CD37000505A6 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20286C33FDCF999611CA2CEA /* Carbon.framework */; };
+		A8C6AFCD1276E87D008C440A /* PixelToyAbout.c in Sources */ = {isa = PBXBuildFile; fileRef = A8C6AFBD1276E87D008C440A /* PixelToyAbout.c */; };
+		A8C6AFCE1276E87D008C440A /* PixelToyAE.c in Sources */ = {isa = PBXBuildFile; fileRef = A8C6AFBE1276E87D008C440A /* PixelToyAE.c */; };
+		A8C6AFCF1276E87D008C440A /* PixelToyAutoPilot.c in Sources */ = {isa = PBXBuildFile; fileRef = A8C6AFBF1276E87D008C440A /* PixelToyAutoPilot.c */; };
+		A8C6AFD01276E87D008C440A /* PixelToyBitmap.c in Sources */ = {isa = PBXBuildFile; fileRef = A8C6AFC01276E87D008C440A /* PixelToyBitmap.c */; };
+		A8C6AFD11276E87D008C440A /* PixelToyFFT.c in Sources */ = {isa = PBXBuildFile; fileRef = A8C6AFC11276E87D008C440A /* PixelToyFFT.c */; };
+		A8C6AFD21276E87D008C440A /* PixelToyFilters.c in Sources */ = {isa = PBXBuildFile; fileRef = A8C6AFC21276E87D008C440A /* PixelToyFilters.c */; };
+		A8C6AFD31276E87D008C440A /* PixelToyIF.c in Sources */ = {isa = PBXBuildFile; fileRef = A8C6AFC31276E87D008C440A /* PixelToyIF.c */; };
+		A8C6AFD41276E87D008C440A /* PixelToyMain.c in Sources */ = {isa = PBXBuildFile; fileRef = A8C6AFC41276E87D008C440A /* PixelToyMain.c */; };
+		A8C6AFD51276E87D008C440A /* PixelToyPalette.c in Sources */ = {isa = PBXBuildFile; fileRef = A8C6AFC51276E87D008C440A /* PixelToyPalette.c */; };
+		A8C6AFD61276E87D008C440A /* PixelToyParticles.c in Sources */ = {isa = PBXBuildFile; fileRef = A8C6AFC61276E87D008C440A /* PixelToyParticles.c */; };
+		A8C6AFD81276E87D008C440A /* PixelToySets.c in Sources */ = {isa = PBXBuildFile; fileRef = A8C6AFC81276E87D008C440A /* PixelToySets.c */; };
+		A8C6AFD91276E87D008C440A /* PixelToySound.c in Sources */ = {isa = PBXBuildFile; fileRef = A8C6AFC91276E87D008C440A /* PixelToySound.c */; };
+		A8C6AFDA1276E87D008C440A /* PixelToyText.c in Sources */ = {isa = PBXBuildFile; fileRef = A8C6AFCA1276E87D008C440A /* PixelToyText.c */; };
+		A8C6AFDB1276E87D008C440A /* PixelToyWaves.c in Sources */ = {isa = PBXBuildFile; fileRef = A8C6AFCB1276E87D008C440A /* PixelToyWaves.c */; };
+		A8C6AFDC1276E87D008C440A /* PixelToyWindows.c in Sources */ = {isa = PBXBuildFile; fileRef = A8C6AFCC1276E87D008C440A /* PixelToyWindows.c */; };
+		A8C6AFDE1276E88D008C440A /* CocoaBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C6AFDD1276E88D008C440A /* CocoaBridge.m */; };
+		A8C6AFEE1276E8DD008C440A /* Default.stng in Resources */ = {isa = PBXBuildFile; fileRef = A8C6AFE51276E8DD008C440A /* Default.stng */; };
+		A8C6AFEF1276E8DD008C440A /* IconFilter.icns in Resources */ = {isa = PBXBuildFile; fileRef = A8C6AFE61276E8DD008C440A /* IconFilter.icns */; };
+		A8C6AFF01276E8DD008C440A /* IconPals.icns in Resources */ = {isa = PBXBuildFile; fileRef = A8C6AFE71276E8DD008C440A /* IconPals.icns */; };
+		A8C6AFF11276E8DD008C440A /* IconSets.icns in Resources */ = {isa = PBXBuildFile; fileRef = A8C6AFE81276E8DD008C440A /* IconSets.icns */; };
+		A8C6AFF21276E8DD008C440A /* Lips Mask.gif in Resources */ = {isa = PBXBuildFile; fileRef = A8C6AFE91276E8DD008C440A /* Lips Mask.gif */; };
+		A8C6AFF31276E8DD008C440A /* Lips.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A8C6AFEA1276E8DD008C440A /* Lips.jpg */; };
+		A8C6AFF51276E8DD008C440A /* PixelToy Help in Resources */ = {isa = PBXBuildFile; fileRef = A8C6AFEC1276E8DD008C440A /* PixelToy Help */; };
+		A8C6B0D51276E909008C440A /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8C6B0D41276E909008C440A /* QuickTime.framework */; };
+		A8D970C51276FA4200AFAA37 /* EndianRemapping.c in Sources */ = {isa = PBXBuildFile; fileRef = A8D970C41276FA4200AFAA37 /* EndianRemapping.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0867D6ABFE840B52C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		20286C2BFDCF999611CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Source/main.m; sourceTree = "<group>"; };
+		20286C33FDCF999611CA2CEA /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+		32DBCF6D0370B57F00C91783 /* PixelToy_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PixelToy_Prefix.pch; sourceTree = "<group>"; };
+		357A7734177EF7B000724F1F /* PixelToy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PixelToy.entitlements; sourceTree = "<group>"; };
+		357F863117745D7E00E68FAD /* English */ = {isa = PBXFileReference; lastKnownFileType = archive.rsrc; name = English; path = English.lproj/PixelToy.rsrc; sourceTree = "<group>"; };
+		357F863217745D8900E68FAD /* French */ = {isa = PBXFileReference; lastKnownFileType = archive.rsrc; name = French; path = French.lproj/PixelToy.rsrc; sourceTree = "<group>"; };
+		357F863D17748CF100E68FAD /* English */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
+		35A5BF3A1A7D252A00C022C5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = PixelToy/Images.xcassets; sourceTree = "<group>"; };
+		35A5BF3D1A7D271000C022C5 /* App-Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "App-Icon.png"; sourceTree = "<group>"; };
+		35A5BF411A7D277900C022C5 /* App-Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "App-Icon@2x.png"; sourceTree = "<group>"; };
+		35C65356177C5AA100BA18DE /* Default.cpal */ = {isa = PBXFileReference; lastKnownFileType = file; path = Default.cpal; sourceTree = "<group>"; };
+		35DBEC471779872C0095BF9F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		35DBEC5217798D520095BF9F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		4A9504C8FFE6A3BC11CA0CBA /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = /System/Library/Frameworks/ApplicationServices.framework; sourceTree = "<absolute>"; };
+		4A9504CAFFE6A41611CA0CBA /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = /System/Library/Frameworks/CoreServices.framework; sourceTree = "<absolute>"; };
+		8D0C4E960486CD37000505A6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8D0C4E970486CD37000505A6 /* PixelToy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PixelToy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8C6AFBD1276E87D008C440A /* PixelToyAbout.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = PixelToyAbout.c; path = Source/PixelToyAbout.c; sourceTree = "<group>"; };
+		A8C6AFBE1276E87D008C440A /* PixelToyAE.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = PixelToyAE.c; path = Source/PixelToyAE.c; sourceTree = "<group>"; };
+		A8C6AFBF1276E87D008C440A /* PixelToyAutoPilot.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = PixelToyAutoPilot.c; path = Source/PixelToyAutoPilot.c; sourceTree = "<group>"; };
+		A8C6AFC01276E87D008C440A /* PixelToyBitmap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = PixelToyBitmap.c; path = Source/PixelToyBitmap.c; sourceTree = "<group>"; };
+		A8C6AFC11276E87D008C440A /* PixelToyFFT.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = PixelToyFFT.c; path = Source/PixelToyFFT.c; sourceTree = "<group>"; };
+		A8C6AFC21276E87D008C440A /* PixelToyFilters.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = PixelToyFilters.c; path = Source/PixelToyFilters.c; sourceTree = "<group>"; };
+		A8C6AFC31276E87D008C440A /* PixelToyIF.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = PixelToyIF.c; path = Source/PixelToyIF.c; sourceTree = "<group>"; };
+		A8C6AFC41276E87D008C440A /* PixelToyMain.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = PixelToyMain.c; path = Source/PixelToyMain.c; sourceTree = "<group>"; };
+		A8C6AFC51276E87D008C440A /* PixelToyPalette.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = PixelToyPalette.c; path = Source/PixelToyPalette.c; sourceTree = "<group>"; };
+		A8C6AFC61276E87D008C440A /* PixelToyParticles.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = PixelToyParticles.c; path = Source/PixelToyParticles.c; sourceTree = "<group>"; };
+		A8C6AFC81276E87D008C440A /* PixelToySets.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = PixelToySets.c; path = Source/PixelToySets.c; sourceTree = "<group>"; };
+		A8C6AFC91276E87D008C440A /* PixelToySound.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = PixelToySound.c; path = Source/PixelToySound.c; sourceTree = "<group>"; };
+		A8C6AFCA1276E87D008C440A /* PixelToyText.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = PixelToyText.c; path = Source/PixelToyText.c; sourceTree = "<group>"; };
+		A8C6AFCB1276E87D008C440A /* PixelToyWaves.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = PixelToyWaves.c; path = Source/PixelToyWaves.c; sourceTree = "<group>"; };
+		A8C6AFCC1276E87D008C440A /* PixelToyWindows.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = PixelToyWindows.c; path = Source/PixelToyWindows.c; sourceTree = "<group>"; };
+		A8C6AFDD1276E88D008C440A /* CocoaBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CocoaBridge.m; path = Source/CocoaBridge.m; sourceTree = "<group>"; };
+		A8C6AFE51276E8DD008C440A /* Default.stng */ = {isa = PBXFileReference; lastKnownFileType = file; path = Default.stng; sourceTree = "<group>"; };
+		A8C6AFE61276E8DD008C440A /* IconFilter.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = IconFilter.icns; sourceTree = "<group>"; };
+		A8C6AFE71276E8DD008C440A /* IconPals.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = IconPals.icns; sourceTree = "<group>"; };
+		A8C6AFE81276E8DD008C440A /* IconSets.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = IconSets.icns; sourceTree = "<group>"; };
+		A8C6AFE91276E8DD008C440A /* Lips Mask.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Lips Mask.gif"; sourceTree = "<group>"; };
+		A8C6AFEA1276E8DD008C440A /* Lips.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Lips.jpg; sourceTree = "<group>"; };
+		A8C6AFEC1276E8DD008C440A /* PixelToy Help */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "PixelToy Help"; sourceTree = "<group>"; };
+		A8C6B0D41276E909008C440A /* QuickTime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickTime.framework; path = /System/Library/Frameworks/QuickTime.framework; sourceTree = "<absolute>"; };
+		A8D96F371276EAFD00AFAA37 /* Defs&Structs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Defs&Structs.h"; path = "Source/Defs&Structs.h"; sourceTree = "<group>"; };
+		A8D96F381276EB0C00AFAA37 /* CarbonShunt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CarbonShunt.h; path = Source/CarbonShunt.h; sourceTree = "<group>"; };
+		A8D970C31276FA4200AFAA37 /* EndianRemapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EndianRemapping.h; path = Source/EndianRemapping.h; sourceTree = "<group>"; };
+		A8D970C41276FA4200AFAA37 /* EndianRemapping.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = EndianRemapping.c; path = Source/EndianRemapping.c; sourceTree = "<group>"; };
+		A8DB9B2B1445D06C003C6A32 /* CocoaBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CocoaBridge.h; path = Source/CocoaBridge.h; sourceTree = "<group>"; };
+		A8DB9B2C1445D06C003C6A32 /* PixelToyAbout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PixelToyAbout.h; path = Source/PixelToyAbout.h; sourceTree = "<group>"; };
+		A8DB9B2D1445D06C003C6A32 /* PixelToyAE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PixelToyAE.h; path = Source/PixelToyAE.h; sourceTree = "<group>"; };
+		A8DB9B2E1445D06C003C6A32 /* PixelToyAutoPilot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PixelToyAutoPilot.h; path = Source/PixelToyAutoPilot.h; sourceTree = "<group>"; };
+		A8DB9B2F1445D06C003C6A32 /* PixelToyBitmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PixelToyBitmap.h; path = Source/PixelToyBitmap.h; sourceTree = "<group>"; };
+		A8DB9B301445D06C003C6A32 /* PixelToyFFT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PixelToyFFT.h; path = Source/PixelToyFFT.h; sourceTree = "<group>"; };
+		A8DB9B311445D06C003C6A32 /* PixelToyFilters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PixelToyFilters.h; path = Source/PixelToyFilters.h; sourceTree = "<group>"; };
+		A8DB9B321445D06C003C6A32 /* PixelToyIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PixelToyIF.h; path = Source/PixelToyIF.h; sourceTree = "<group>"; };
+		A8DB9B331445D06C003C6A32 /* PixelToyMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PixelToyMain.h; path = Source/PixelToyMain.h; sourceTree = "<group>"; };
+		A8DB9B341445D06C003C6A32 /* PixelToyPalette.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PixelToyPalette.h; path = Source/PixelToyPalette.h; sourceTree = "<group>"; };
+		A8DB9B351445D06C003C6A32 /* PixelToyParticles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PixelToyParticles.h; path = Source/PixelToyParticles.h; sourceTree = "<group>"; };
+		A8DB9B371445D06C003C6A32 /* PixelToySets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PixelToySets.h; path = Source/PixelToySets.h; sourceTree = "<group>"; };
+		A8DB9B381445D06C003C6A32 /* PixelToySound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PixelToySound.h; path = Source/PixelToySound.h; sourceTree = "<group>"; };
+		A8DB9B391445D06C003C6A32 /* PixelToyText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PixelToyText.h; path = Source/PixelToyText.h; sourceTree = "<group>"; };
+		A8DB9B3A1445D06C003C6A32 /* PixelToyWaves.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PixelToyWaves.h; path = Source/PixelToyWaves.h; sourceTree = "<group>"; };
+		A8DB9B3B1445D06C003C6A32 /* PixelToyWindows.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PixelToyWindows.h; path = Source/PixelToyWindows.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D0C4E910486CD37000505A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35DBEC5317798D520095BF9F /* Cocoa.framework in Frameworks */,
+				35DBEC481779872C0095BF9F /* SystemConfiguration.framework in Frameworks */,
+				8D0C4E920486CD37000505A6 /* Carbon.framework in Frameworks */,
+				A8C6B0D51276E909008C440A /* QuickTime.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		195DF8CFFE9D517E11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D0C4E970486CD37000505A6 /* PixelToy.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		20286C29FDCF999611CA2CEA /* PixelToy */ = {
+			isa = PBXGroup;
+			children = (
+				357A7734177EF7B000724F1F /* PixelToy.entitlements */,
+				20286C2AFDCF999611CA2CEA /* Sources */,
+				A8D96F2A1276EA4F00AFAA37 /* Other Sources */,
+				20286C2CFDCF999611CA2CEA /* Resources */,
+				20286C32FDCF999611CA2CEA /* External Frameworks and Libraries */,
+				195DF8CFFE9D517E11CA2CBB /* Products */,
+			);
+			name = PixelToy;
+			sourceTree = "<group>";
+		};
+		20286C2AFDCF999611CA2CEA /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				A8D96F381276EB0C00AFAA37 /* CarbonShunt.h */,
+				35DBEC4F177987E40095BF9F /* Cocoa */,
+				A8D96F371276EAFD00AFAA37 /* Defs&Structs.h */,
+				A8DB9B331445D06C003C6A32 /* PixelToyMain.h */,
+				A8C6AFC41276E87D008C440A /* PixelToyMain.c */,
+				A8DB9B2C1445D06C003C6A32 /* PixelToyAbout.h */,
+				A8C6AFBD1276E87D008C440A /* PixelToyAbout.c */,
+				A8DB9B2D1445D06C003C6A32 /* PixelToyAE.h */,
+				A8C6AFBE1276E87D008C440A /* PixelToyAE.c */,
+				A8DB9B2E1445D06C003C6A32 /* PixelToyAutoPilot.h */,
+				A8C6AFBF1276E87D008C440A /* PixelToyAutoPilot.c */,
+				A8DB9B2F1445D06C003C6A32 /* PixelToyBitmap.h */,
+				A8C6AFC01276E87D008C440A /* PixelToyBitmap.c */,
+				A8DB9B301445D06C003C6A32 /* PixelToyFFT.h */,
+				A8C6AFC11276E87D008C440A /* PixelToyFFT.c */,
+				A8DB9B311445D06C003C6A32 /* PixelToyFilters.h */,
+				A8C6AFC21276E87D008C440A /* PixelToyFilters.c */,
+				A8DB9B321445D06C003C6A32 /* PixelToyIF.h */,
+				A8C6AFC31276E87D008C440A /* PixelToyIF.c */,
+				A8DB9B341445D06C003C6A32 /* PixelToyPalette.h */,
+				A8C6AFC51276E87D008C440A /* PixelToyPalette.c */,
+				A8DB9B351445D06C003C6A32 /* PixelToyParticles.h */,
+				A8C6AFC61276E87D008C440A /* PixelToyParticles.c */,
+				A8DB9B371445D06C003C6A32 /* PixelToySets.h */,
+				A8C6AFC81276E87D008C440A /* PixelToySets.c */,
+				A8DB9B381445D06C003C6A32 /* PixelToySound.h */,
+				A8C6AFC91276E87D008C440A /* PixelToySound.c */,
+				A8DB9B391445D06C003C6A32 /* PixelToyText.h */,
+				A8C6AFCA1276E87D008C440A /* PixelToyText.c */,
+				A8DB9B3A1445D06C003C6A32 /* PixelToyWaves.h */,
+				A8C6AFCB1276E87D008C440A /* PixelToyWaves.c */,
+				A8DB9B3B1445D06C003C6A32 /* PixelToyWindows.h */,
+				A8C6AFCC1276E87D008C440A /* PixelToyWindows.c */,
+				A8D970C31276FA4200AFAA37 /* EndianRemapping.h */,
+				A8D970C41276FA4200AFAA37 /* EndianRemapping.c */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		20286C2CFDCF999611CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				35A5BF3A1A7D252A00C022C5 /* Images.xcassets */,
+				357F863017745D7E00E68FAD /* PixelToy.rsrc */,
+				357F863C17748CF100E68FAD /* Localizable.strings */,
+				35A5BF3D1A7D271000C022C5 /* App-Icon.png */,
+				35A5BF411A7D277900C022C5 /* App-Icon@2x.png */,
+				A8C6AFE51276E8DD008C440A /* Default.stng */,
+				35C65356177C5AA100BA18DE /* Default.cpal */,
+				A8C6AFE61276E8DD008C440A /* IconFilter.icns */,
+				A8C6AFE71276E8DD008C440A /* IconPals.icns */,
+				A8C6AFE81276E8DD008C440A /* IconSets.icns */,
+				A8C6AFE91276E8DD008C440A /* Lips Mask.gif */,
+				A8C6AFEA1276E8DD008C440A /* Lips.jpg */,
+				A8C6AFEC1276E8DD008C440A /* PixelToy Help */,
+				8D0C4E960486CD37000505A6 /* Info.plist */,
+				0867D6AAFE840B52C02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		20286C32FDCF999611CA2CEA /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				35DBEC471779872C0095BF9F /* SystemConfiguration.framework */,
+				A8C6B0D41276E909008C440A /* QuickTime.framework */,
+				35DBEC5217798D520095BF9F /* Cocoa.framework */,
+				20286C33FDCF999611CA2CEA /* Carbon.framework */,
+				4A9504CAFFE6A41611CA0CBA /* CoreServices.framework */,
+				4A9504C8FFE6A3BC11CA0CBA /* ApplicationServices.framework */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		35DBEC4F177987E40095BF9F /* Cocoa */ = {
+			isa = PBXGroup;
+			children = (
+				A8DB9B2B1445D06C003C6A32 /* CocoaBridge.h */,
+				A8C6AFDD1276E88D008C440A /* CocoaBridge.m */,
+			);
+			name = Cocoa;
+			sourceTree = "<group>";
+		};
+		A8D96F2A1276EA4F00AFAA37 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32DBCF6D0370B57F00C91783 /* PixelToy_Prefix.pch */,
+				20286C2BFDCF999611CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D0C4E890486CD37000505A6 /* PixelToy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0E91AC508A95435008D54AB /* Build configuration list for PBXNativeTarget "PixelToy" */;
+			buildPhases = (
+				8D0C4E8C0486CD37000505A6 /* Resources */,
+				357F863B1774893D00E68FAD /* git build info */,
+				8D0C4E8F0486CD37000505A6 /* Sources */,
+				8D0C4E910486CD37000505A6 /* Frameworks */,
+				3549CF8A194F554200A7482F /* Apple Code Sign */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PixelToy;
+			productInstallPath = "$(HOME)/Applications";
+			productName = PixelToy;
+			productReference = 8D0C4E970486CD37000505A6 /* PixelToy.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		20286C28FDCF999611CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0410;
+				ORGANIZATIONNAME = LairWare;
+				TargetAttributes = {
+					8D0C4E890486CD37000505A6 = {
+						DevelopmentTeam = 8X4SEBTU2P;
+					};
+				};
+			};
+			buildConfigurationList = C0E91AC908A95435008D54AB /* Build configuration list for PBXProject "PixelToy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				en,
+			);
+			mainGroup = 20286C29FDCF999611CA2CEA /* PixelToy */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D0C4E890486CD37000505A6 /* PixelToy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D0C4E8C0486CD37000505A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				357F8633177463CC00E68FAD /* PixelToy.rsrc in Resources */,
+				8D0C4E8D0486CD37000505A6 /* InfoPlist.strings in Resources */,
+				35A5BF3B1A7D252A00C022C5 /* Images.xcassets in Resources */,
+				35C65357177C5AA100BA18DE /* Default.cpal in Resources */,
+				A8C6AFEE1276E8DD008C440A /* Default.stng in Resources */,
+				A8C6AFEF1276E8DD008C440A /* IconFilter.icns in Resources */,
+				A8C6AFF01276E8DD008C440A /* IconPals.icns in Resources */,
+				A8C6AFF11276E8DD008C440A /* IconSets.icns in Resources */,
+				A8C6AFF21276E8DD008C440A /* Lips Mask.gif in Resources */,
+				A8C6AFF31276E8DD008C440A /* Lips.jpg in Resources */,
+				A8C6AFF51276E8DD008C440A /* PixelToy Help in Resources */,
+				357F863E17748CF100E68FAD /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3549CF8A194F554200A7482F /* Apple Code Sign */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Apple Code Sign";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ ${CONFIGURATION} == \"Release\" ]\nthen\n\npushd $BUILT_PRODUCTS_DIR/\n\n/usr/bin/codesign --force --sign \"Developer ID Application: LairWare Software\" --requirements \"=designated => anchor apple generic  and identifier \\\"com.lairware.pixeltoy\\\" and ((cert leaf[field.1.2.840.113635.100.6.1.9] exists) or ( certificate 1[field.1.2.840.113635.100.6.2.6] exists and certificate leaf[field.1.2.840.113635.100.6.1.13] exists  and certificate leaf[subject.OU] = \\\"5WTDB5F65L\\\" ))\" \"${BUILT_PRODUCTS_DIR}\"/\"PixelToy.app\"\n\npopd\nfi";
+		};
+		357F863B1774893D00E68FAD /* git build info */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "git build info";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "buildNumber=$(git rev-list HEAD | wc -l | tr -d ' ')\nbuildHash=$(git rev-parse --short HEAD)\ninfoPath=${BUILT_PRODUCTS_DIR}/${INFOPLIST_PATH}\necho \"set $buildNumber ($buildHash) in $infoPath\"\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"$infoPath\"\n/usr/libexec/PlistBuddy -c \"Set :LWCommit $buildHash\" \"$infoPath\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D0C4E8F0486CD37000505A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D0C4E900486CD37000505A6 /* main.m in Sources */,
+				A8C6AFCD1276E87D008C440A /* PixelToyAbout.c in Sources */,
+				A8C6AFCE1276E87D008C440A /* PixelToyAE.c in Sources */,
+				A8C6AFCF1276E87D008C440A /* PixelToyAutoPilot.c in Sources */,
+				A8C6AFD01276E87D008C440A /* PixelToyBitmap.c in Sources */,
+				A8C6AFD11276E87D008C440A /* PixelToyFFT.c in Sources */,
+				A8C6AFD21276E87D008C440A /* PixelToyFilters.c in Sources */,
+				A8C6AFD31276E87D008C440A /* PixelToyIF.c in Sources */,
+				A8C6AFD41276E87D008C440A /* PixelToyMain.c in Sources */,
+				A8C6AFD51276E87D008C440A /* PixelToyPalette.c in Sources */,
+				A8C6AFD61276E87D008C440A /* PixelToyParticles.c in Sources */,
+				A8C6AFD81276E87D008C440A /* PixelToySets.c in Sources */,
+				A8C6AFD91276E87D008C440A /* PixelToySound.c in Sources */,
+				A8C6AFDA1276E87D008C440A /* PixelToyText.c in Sources */,
+				A8C6AFDB1276E87D008C440A /* PixelToyWaves.c in Sources */,
+				A8C6AFDC1276E87D008C440A /* PixelToyWindows.c in Sources */,
+				A8C6AFDE1276E88D008C440A /* CocoaBridge.m in Sources */,
+				A8D970C51276FA4200AFAA37 /* EndianRemapping.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0867D6AAFE840B52C02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0867D6ABFE840B52C02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		357F863017745D7E00E68FAD /* PixelToy.rsrc */ = {
+			isa = PBXVariantGroup;
+			children = (
+				357F863117745D7E00E68FAD /* English */,
+				357F863217745D8900E68FAD /* French */,
+			);
+			name = PixelToy.rsrc;
+			sourceTree = "<group>";
+		};
+		357F863C17748CF100E68FAD /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				357F863D17748CF100E68FAD /* English */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C0E91AC608A95435008D54AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PixelToy.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = PixelToy_Prefix.pch;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				PRODUCT_NAME = PixelToy;
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C0E91AC708A95435008D54AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PixelToy.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PREFIX_HEADER = PixelToy_Prefix.pch;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				PRODUCT_NAME = PixelToy;
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C0E91ACA08A95435008D54AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "Developer ID Application: LairWare Software";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEPLOYMENT_POSTPROCESSING = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = "EXPIRINGBETA=0";
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Info.plist;
+				LD_DEPENDENCY_INFO_FILE = "";
+				LD_DONT_RUN_DEDUPLICATION = NO;
+				LD_LTO_OBJECT_FILE = "";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = macosx10.6;
+				SEPARATE_STRIP = NO;
+				STRIP_INSTALLED_PRODUCT = NO;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		C0E91ACB08A95435008D54AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "Developer ID Application: LairWare Software";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEPLOYMENT_POSTPROCESSING = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = "EXPIRINGBETA=0";
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Info.plist;
+				LD_DEPENDENCY_INFO_FILE = "";
+				LD_DONT_RUN_DEDUPLICATION = NO;
+				LD_LTO_OBJECT_FILE = "";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = macosx10.6;
+				STRIP_INSTALLED_PRODUCT = NO;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C0E91AC508A95435008D54AB /* Build configuration list for PBXNativeTarget "PixelToy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0E91AC608A95435008D54AB /* Debug */,
+				C0E91AC708A95435008D54AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0E91AC908A95435008D54AB /* Build configuration list for PBXProject "PixelToy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0E91ACA08A95435008D54AB /* Debug */,
+				C0E91ACB08A95435008D54AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 20286C28FDCF999611CA2CEA /* Project object */;
+}

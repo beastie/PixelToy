@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleDocumentTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>stng</string>
+			</array>
+			<key>CFBundleTypeIconFile</key>
+			<string>IconSets.icns</string>
+			<key>CFBundleTypeName</key>
+			<string>PixelToy Sets</string>
+			<key>CFBundleTypeOSTypes</key>
+			<array>
+				<string>STNG</string>
+			</array>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>LSHandlerRank</key>
+			<string>Owner</string>
+		</dict>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>cflt</string>
+			</array>
+			<key>CFBundleTypeIconFile</key>
+			<string>IconFilter.icns</string>
+			<key>CFBundleTypeName</key>
+			<string>PixelToy Filter</string>
+			<key>CFBundleTypeOSTypes</key>
+			<array>
+				<string>CFLT</string>
+			</array>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>LSHandlerRank</key>
+			<string>Owner</string>
+		</dict>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>cpal</string>
+			</array>
+			<key>CFBundleTypeIconFile</key>
+			<string>IconPals.icns</string>
+			<key>CFBundleTypeName</key>
+			<string>PixelToy Palettes</string>
+			<key>CFBundleTypeOSTypes</key>
+			<array>
+				<string>CPAL</string>
+			</array>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>LSHandlerRank</key>
+			<string>Owner</string>
+		</dict>
+	</array>
+	<key>CFBundleExecutable</key>
+	<string>${EXECUTABLE_NAME}</string>
+	<key>CFBundleHelpBookFolder</key>
+	<string>PixelToy Help</string>
+	<key>CFBundleHelpBookName</key>
+	<string>PixelToy Help</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.lairware.PixelToy</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>${PRODUCT_NAME}</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>3.0.2</string>
+	<key>CFBundleSignature</key>
+	<string>BtP3</string>
+	<key>CFBundleVersion</key>
+	<string>(git commit count)</string>
+	<key>CSResourcesFileMapped</key>
+	<true/>
+	<key>LSApplicationCategoryType</key>
+	<string>public.app-category.entertainment</string>
+	<key>LSMinimumSystemVersion</key>
+	<string>10.6</string>
+	<key>LWCommit</key>
+	<string>(git commit hash)</string>
+	<key>NSMainNibFile</key>
+	<string>MainMenu</string>
+</dict>
+</plist>

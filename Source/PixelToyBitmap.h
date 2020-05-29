@@ -1,0 +1,23 @@
+void ImageEditor(void);
+void ShowImageValues(DialogPtr theDialog, short which);
+void DrawCurrentImagePreviews(DialogPtr theDialog);
+void SetLiveImageSliderValue(short item, short value);
+char CreateNewImage(void);
+void SetDefaultImageAndMask(short i);
+void DrawImageList(Rect* drawRect);
+void HandleBitmapPreviewImageClick(DialogPtr theDialog, Rect *rect);
+void PreviewImageParameters(Rect *rect);
+void ResetImageSize(short i, short margin);
+void DoImages(Boolean afterActions);
+void RefreshAllBMWorlds(void);
+void RefreshBMWorlds(void);
+void SetupBMWorld(short i, short which);
+void ResetBMWorld(short i, short which);
+void SetImageRect(short i, short x, short y, Rect *rect);
+void ChangeToCurSetsDirectory(FSSpec *fss);
+void ChangeToApplicationDirectory(FSSpec *fss);
+Boolean ChangeToAppResourcesDirectory(FSSpec *fss);
+Boolean ChangeToPicturesDirectory(FSSpec *fss);
+// Movie Stuff
+void InitializeMovies(void);
+void CloseMovies(void);
